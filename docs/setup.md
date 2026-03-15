@@ -1,8 +1,9 @@
 # Setup
 
-This document goes over all the dev environment setup necessary to get the best experience working on this website. I created it for my own sanity due to already having to go through this process thrice on various machines. 
+This document goes over all the dev environment setup necessary to get the best experience working on this website. I created it for my own sanity due to already having to go through this process thrice on various machines.
 
 <!-- omit in toc -->
+
 ## Table of Contents
 
 - [IDE](#ide)
@@ -18,21 +19,20 @@ This document goes over all the dev environment setup necessary to get the best 
 
 Install [VSCode](https://code.visualstudio.com/). Due to its lightweight nature it is fast by default, and the crazy number of available extensions give you an incredible variety of customization options and language support.
 
-After installing VSCode, make sure `Auto Save` is toggled on from the `File` menu. 
+After installing VSCode, make sure `Auto Save` is toggled on from the `File` menu.
 
 ### VSCode Extensions
 
-Install the following extensions: 
+Install the following extensions:
 
 - ESLint
 - Git History
-- Git Lens
-- Git Supercharged
+- Git Lens-Supercharged
 - Prettier ESLint
 - Vue Extension Box
 - vue-helper
 
-*Please note, some of the extensions may not work until the proper node packages are installed.*
+_Please note, some of the extensions may not work until the proper node packages are installed._
 
 ### User Settings
 
@@ -46,7 +46,7 @@ Paste the following lines into the file. The file probably already has content, 
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "explicit",
     "source.unusedImports": "explicit",
-},  
+},
 "editor.formatOnPaste": false, // required
 "editor.formatOnType": false, // required
 "editor.formatOnSaveMode": "file", // required to format on save
@@ -81,11 +81,11 @@ Install `nvm` by running the following commands in Git Bash:
 ```bash
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
-$ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" 
+$ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 $ [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
-*Note: the reason to use Git Bash is that the nvm documentation expects you to use Linux. On Windows, Git Bash is the closest alternative.*
+_Note: the reason to use Git Bash is that the nvm documentation expects you to use Linux. On Windows, Git Bash is the closest alternative._
 
 ### Install Node
 
@@ -116,7 +116,7 @@ Node comes with npm (node package manager), which is what is used to install all
 $ npm i
 ```
 
-This creates a `node_modules` folder and a `package-lock.json` file (if one did not already exist). 
+This creates a `node_modules` folder and a `package-lock.json` file (if one did not already exist).
 
 Some of the previously installed VSCode Extensions may depend on some of the node modules that get installed with npm. Restart VSCode to ensure those extensions properly pick up the modules.
 
