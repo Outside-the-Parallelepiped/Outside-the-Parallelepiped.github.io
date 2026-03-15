@@ -16,7 +16,7 @@ Once the environment has been set up, run the following command to get a local d
 make local
 ```
 
-# otp
+## Template
 
 This template should help get you started developing with Vue 3 in Vite.
 
