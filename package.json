@@ -37,6 +37,7 @@
     "eslint-plugin-oxlint": "~1.50.0",
     "eslint-plugin-playwright": "^2.8.0",
     "eslint-plugin-vue": "~10.8.0",
+    "execa": "^7.1.1",
     "gh-pages": "^5.0.0",
     "jiti": "^2.6.1",
     "jsdom": "^28.1.0",
