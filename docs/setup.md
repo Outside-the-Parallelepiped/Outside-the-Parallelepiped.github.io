@@ -6,6 +6,7 @@ This document goes over all the dev environment setup necessary to get the best 
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [IDE](#ide)
   - [VSCode Extensions](#vscode-extensions)
   - [User Settings](#user-settings)
@@ -89,23 +90,23 @@ _Note: the reason to use Git Bash is that the nvm documentation expects you to u
 
 ### Install Node
 
-You can install a specific version of Node (such as `v18.19.0`) by running the following nvm command:
+You can install a specific version of Node (such as `v22.22.1`) by running the following nvm command:
 
 ```bash
-$ nvm install 18.19.0
+$ nvm install 22.22.1
 ```
 
 To ensure this is the version of node that will be picked up by the Terminal, run the following nvm command:
 
 ```bash
-$ nvm use 18.19.0
+$ nvm use 22.22.1
 ```
 
 Just to be safe, confirm that the right version of Node is picked up by the terminal by running the following command and getting the expected result:
 
 ```bash
 $ node -v
-v18.19.0
+v22.22.1
 ```
 
 ### Node Modules
