@@ -5,5 +5,5 @@
 <script setup lang="ts">
 import { useStoryblok } from '@storyblok/vue'
 
-const story = await useStoryblok('about')
+const story = await useStoryblok('games')
 </script>

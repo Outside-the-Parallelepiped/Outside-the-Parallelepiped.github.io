@@ -1,35 +1,102 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
+  width: 100%;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--vt-c-green);
   transition: 0.4s;
-  padding: 3px;
+}
+
+h1 {
+  font-size: 5rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--color-heading);
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--color-heading);
+}
+
+p {
+  margin-top: 20px;
+}
+
+blockquote {
+  color: var(--vt-c-green);
+  font-size: 20px;
+  background-color: var(--color-background-soft);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+blockquote::before {
+  content: '\201C';
+}
+
+blockquote::after {
+  content: '\201D';
+}
+
+.loader {
+  border: 5px solid #555;
+  border-top: 5px solid var(--vt-c-green);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.5s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+body {
+  display: flex;
+}
+
+#app {
+  display: grid;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    /* background-color: hsla(160, 100%, 37%, 0.2); */
+  }
+
+  a.noBackground:hover{
+    background-color: transparent;
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
   }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1rem;
   }
 }
