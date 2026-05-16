@@ -28,7 +28,7 @@ Install the following extensions:
 
 - ESLint
 - Git History
-- Git Lens-Supercharged
+- ~~Git Lens-Supercharged~~
 - Prettier ESLint
 - Vue Extension Box
 - vue-helper
