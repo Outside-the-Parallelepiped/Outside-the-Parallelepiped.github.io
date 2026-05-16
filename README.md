@@ -5,6 +5,12 @@ Repo to deploy the Outside the Parallelepiped website: https://www.outsidethepar
 ## Table of Contents <!-- omit in toc -->
 
 - [Setup](#setup)
+- [Recommended IDE Setup](#recommended-ide-setup)
+- [Recommended Browser Setup](#recommended-browser-setup)
+- [Type Support for `.vue` Imports in TS](#type-support-for-vue-imports-in-ts)
+  - [Run Unit Tests with Vitest](#run-unit-tests-with-vitest)
+  - [Run End-to-End Tests with Playwright](#run-end-to-end-tests-with-playwright)
+
 
 ## Setup
 
