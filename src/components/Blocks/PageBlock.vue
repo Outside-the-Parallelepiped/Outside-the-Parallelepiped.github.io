@@ -1,6 +1,6 @@
 <template>
   <div v-if="!blok" class="loader" />
-  <div v-else class="page">
+  <div v-else class="page" v-editable="blok">
     <StoryblokComponent
       v-for="currentBlok in blok.body"
       :key="currentBlok._uid"

@@ -4,9 +4,12 @@
 
 <script setup lang="ts">
 import { useStoryblok } from '@storyblok/vue'
+import { useRoute } from 'vue-router'
+const route = useRoute()
+const slug = route.params.slug
 
 const story = await useStoryblok(
-  'home',
+  `games/${slug}`,
   {
     version: import.meta.env.DEV ? 'draft' : 'published',
     resolve_relations: 'previewTileBlock.reference',

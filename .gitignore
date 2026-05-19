@@ -33,6 +33,7 @@ coverage
 .eslintrc.js
 .babelrc.json
 .env
+.env.development
 
 # Editor directories and files
 .vscode

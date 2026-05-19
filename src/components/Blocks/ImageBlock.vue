@@ -1,6 +1,6 @@
 <template>
   <div v-if="!blok" class="loader" />
-  <div v-else class="image">
+  <div v-else class="image" v-editable="blok">
     <img :src="blok.src.filename" />
   </div>
 </template>

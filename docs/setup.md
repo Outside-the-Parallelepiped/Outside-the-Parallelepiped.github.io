@@ -2,11 +2,8 @@
 
 This document goes over all the dev environment setup necessary to get the best experience working on this website. I created it for my own sanity due to already having to go through this process thrice on various machines.
 
-<!-- omit in toc -->
+## Table of Contents <!-- omit in toc -->
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
 - [IDE](#ide)
   - [VSCode Extensions](#vscode-extensions)
   - [User Settings](#user-settings)
